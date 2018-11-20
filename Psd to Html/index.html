@@ -186,7 +186,7 @@
             </div>
             <br />
             <div class="row">
-                <div class="col-lg-3 mt-2">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 mt-2">
                     <img src="images/a1.jpg" width="240" height="390" class="shads outer-border" />
                 </div>
                 <div class="col-lg-3 mt-2">
@@ -420,7 +420,6 @@
             </div>
         </div>
     </section>
-    <br /><br /><br />
     <section id="contact-us">
         <div class="container">
             <h2 class="h1-responsive font-weight-bold text-info text-center my-4">Contact us</h2>
@@ -429,79 +428,50 @@
                 Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
                 a matter of hours to help you.
             </p>
-            <div class="row">
-                <!--Grid column-->
-                <div class="col-md-9 mb-md-0 mb-5">
-                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-                        <!--Grid row-->
-                        <div class="row">
-                            <!--Grid column-->
-                            <div class="col-md-6">
-                                <div class="md-form mb-0">
-                                    <input type="text" id="name" name="name" class="form-control">
-                                    <label for="name" class="">Your name</label>
+            <!-- Grid column -->
+            <div class="mb-4 col-lg-12">
+                <section class="form-dark">
+                    <div class="card card-image img1">
+                        <div class="text-white rgba-stylish-strong py-5 px-5 z-depth-2">
+                            <!--Header-->
+                            <div class="text-center">
+                                <h3 class="white-text mb-5 mt-4 font-weight-bold"><strong>CONTACT</strong> <a class="green-text font-weight-bold"><strong> US</strong></a></h3>
+                            </div>
+                            <!--Body-->
+                            <div class="md-form">
+                                <input type="text" id="Form-email5" class="form-control text-white">
+                                <label for="Form-email5" class="text-white">Your name</label>
+                            </div>
+                            <div class="md-form">
+                                <input type="text" id="Form-pass5" class="text-white form-control">
+                                <label for="Form-pass5" class="text-white">Your mail</label>
+                            </div>
+                            <div class="md-form mb-5">
+                                <textarea type="text" id="message5" name="message5" rows="2" class="text-white form-control md-textarea white-text"></textarea>
+                                <label for="message5" class="text-white">Your message</label>
+                                <div class="custom-control custom-checkbox mb-4 ml-3">
+                                    <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+                                    <label class="custom-control-label text-white" for="defaultContactFormCopy">Send me a copy of this message</label>
                                 </div>
                             </div>
-                            <!--Grid column-->
-                            <!--Grid column-->
-                            <div class="col-md-6">
-                                <div class="md-form mb-0">
-                                    <input type="text" id="email" name="email" class="form-control">
-                                    <label for="email" class="">Your email</label>
+                            <!--Grid row-->
+                            <div class="md-form">
+                                <div class="row d-flex align-items-center">
+                                    <!--Grid column-->
+                                    <div class="text-center mb-3 col-md-12">
+                                        <button type="button" class="btn btn-success btn-block btn-rounded z-depth-1 waves-effect waves-light" style="border-radius:21px ">Send message</button>
+                                    </div>
+                                    <!--Grid column-->
                                 </div>
                             </div>
-                            <!--Grid column-->
+                            <!--Grid row-->
                         </div>
-                        <!--Grid row-->
-                        <!--Grid row-->
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="md-form mb-0">
-                                    <input type="text" id="subject" name="subject" class="form-control">
-                                    <label for="subject" class="">Subject</label>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Grid row-->
-                        <!--Grid row-->
-                        <div class="row">
-                            <!--Grid column-->
-                            <div class="col-md-12">
-                                <div class="md-form">
-                                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                                    <label for="message">Your message</label>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Grid row-->
-                    </form>
-                    <div class="text-center text-md-left">
-                        <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
                     </div>
-                    <div class="status"></div>
-                </div>
-                <!--Grid column-->
-                <!--Grid column-->
-                <div class="col-md-3 text-center">
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <i class="fa fa-map-marker fa-2x"></i>
-                            <p>San Francisco, CA 94126, USA</p>
-                        </li>
-                        <li>
-                            <i class="fa fa-phone mt-4 fa-2x"></i>
-                            <p>+ 01 234 567 89</p>
-                        </li>
-                        <li>
-                            <i class="fa fa-envelope mt-4 fa-2x"></i>
-                            <p>contact@mdbootstrap.com</p>
-                        </li>
-                    </ul>
-                </div>
-                <!--Grid column-->
+                </section>
             </div>
+            <!-- Grid column -->
         </div>
-    </section><br /><br /><br />
+    </section>
     <section id="goole-maps">
         <div class="container">
             <h2 class="h1-responsive font-weight-bold text-info text-center my-4">Clients Guids</h2>
@@ -511,6 +481,174 @@
                 a matter of hours to help you.
             </p>
         </div>
+        <div class="container-fluid">
+            <div id="googleMap" style="width:100%;height:400px;"></div>
+            <script>
+                function myMap() {
+                    var mapProp = {
+                        center: new google.maps.LatLng(31.5204, 74.3587),
+                        zoom: 9,
+                    };
+                    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+                }
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEgnNwQ29g7IKjMmBOKcACYDZLhPKTis0&callback=myMap"></script>
+        </div>
+    </section>
+    <br /><br /><br />
+    <section id="About-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 text-center">
+                    <h2>About Corporation</h2>
+                    <p class="text-justify">
+                        t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <h2> Get Updates</h2>
+                    <input type="text" class="form-control" placeholder="Search Query..." />
+                    <button type="submit" class="btn btn-danger">Get Updates</button>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <h2>Stay in Touch</h2>
+                    <ul>
+                        <li style="padding: 2%"><a href="#" class="youtube"><span class="fa fa-youtube fa-lg"></span></a></li>
+                        <li style="padding: 3%"><a href="#" class="facebook"><span class="fa fa-facebook fa-lg"></span></a></li>
+                        <li style="padding: 2%"><a href="#" class="linkedin"><span class="fa fa-linkedin fa-lg"></span></a></li>
+                        <li style="padding: 2%"><a href="#" class="google-pluse"><span class="fa fa-google-plus"></span></a></li>
+                        <li style="padding: 2%"><a href="#" class="google-pluse"><span class="fa fa-instagram fa-lg"></span></a></li>
+                        <li style="padding: 2%"><a href="#" class="google-pluse"><span class="fa fa-envelope-o fa-lg"></span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br /><br /><br />
+    <section id="footer">
+        <!-- Footer -->
+        <footer class="page-footer font-small unique-color-dark">
+            <div style="background-color: #6351ce;">
+                <div class="container">
+                    <!-- Grid row-->
+                    <div class="row py-4 d-flex align-items-center">
+                        <!-- Grid column -->
+                        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                            <h6 class="mb-0">Get connected with us on social networks!</h6>
+                        </div>
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+                        <div class="col-md-6 col-lg-7 text-center text-md-right">
+                            <!-- Facebook -->
+                            <a class="fb-ic">
+                                <i class="fa fa-facebook white-text mr-4"> </i>
+                            </a>
+                            <!-- Twitter -->
+                            <a class="tw-ic">
+                                <i class="fa fa-twitter white-text mr-4"> </i>
+                            </a>
+                            <!-- Google +-->
+                            <a class="gplus-ic">
+                                <i class="fa fa-google-plus white-text mr-4"> </i>
+                            </a>
+                            <!--Linkedin -->
+                            <a class="li-ic">
+                                <i class="fa fa-linkedin white-text mr-4"> </i>
+                            </a>
+                            <!--Instagram-->
+                            <a class="ins-ic">
+                                <i class="fa fa-instagram white-text"> </i>
+                            </a>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row-->
+                </div>
+            </div>
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase font-weight-bold">Lk' Softs Solutions</h6>
+                        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                        <p>
+                            Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase font-weight-bold">Products</h6>
+                        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                        <p>
+                            <a href="#!">ERP Systems</a>
+                        </p>
+                        <p>
+                            <a href="#!">Inverntory System</a>
+                        </p>
+                        <p>
+                            <a href="#!">Custome Software</a>
+                        </p>
+                        <p>
+                            <a href="#!">Shelf Software</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+                        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                        <p>
+                            <a href="#!">Your Account</a>
+                        </p>
+                        <p>
+                            <a href="#!">Become an Affiliate</a>
+                        </p>
+                        <p>
+                            <a href="#!">Products Info</a>
+                        </p>
+                        <p>
+                            <a href="#!">Help</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                        <p>
+                            <i class="fa fa-home mr-3"></i> Pakistan Lahore Near Cantt
+                        </p>
+                        <p>
+                            <i class="fa fa-envelope mr-3"></i> usmanhaiderkhan4@gmail.com
+                        </p>
+                        <p>
+                            <i class="fa fa-phone mr-3"></i> +92 301 4344275
+                        </p>
+                        <p>
+                            <i class="fa fa-print mr-3"></i> +92 3486799662
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+            <!-- Footer Links -->
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">
+                © 2018 Copyright:
+                <a href=""> MDBootstrap.com</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
     </section>
     <!-- SCRIPTS -->
     <!-- JQuery -->
@@ -523,6 +661,7 @@
     <script type="text/javascript" src="Bootstrap4/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="Bootstrap4/js/mdb.min.js"></script>
+    <!-- MDB core JavaScript -->
     <!-- Custome js files -->
     <script src="Bootstrap4/js/main.js"></script>
 </body>

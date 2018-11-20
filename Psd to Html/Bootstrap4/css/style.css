@@ -326,3 +326,44 @@ h2 {
 #contact-us {
     padding: 8%;
 }
+
+.youtube {
+    border-radius: 50%;
+    background-color: #FE0000;
+    color: white;
+    padding: 35%;
+    -webkit-box-shadow: 0px 6px 4px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 6px 4px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 6px 4px 0px rgba(0,0,0,0.75);
+}
+
+.facebook {
+    background-color: #4267B2;
+    border-radius: 50%;
+    color: white;
+    padding: 47%;
+    font-size: 18px;
+    -webkit-box-shadow: 0px 6px 4px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 6px 4px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 6px 4px 0px rgba(0,0,0,0.75);
+}
+
+.linkedin {
+    background-color: #0073B2;
+    border-radius: 50%;
+    color: white;
+    padding: 36%;
+    -webkit-box-shadow: 0px 6px 4px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 6px 4px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 6px 4px 0px rgba(0,0,0,0.75);
+}
+
+.google-pluse {
+    background-color: #C64439;
+    border-radius: 50%;
+    color: white;
+    padding: 29%;
+    -webkit-box-shadow: 0px 6px 4px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 6px 4px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 6px 4px 0px rgba(0,0,0,0.75);
+}
