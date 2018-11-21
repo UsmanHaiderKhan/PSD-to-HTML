@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>parallex</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="Bootstrap4/css/bootstrap.min.css" rel="stylesheet">
+    <!-- MateriaBootstrap4/l Design Bootstrap -->
+    <link href="Bootstrap4/css/mdb.min.css" rel="stylesheet">
+    <!-- Your cuBootstrap4/stom styles (optional) -->
+    <link href="Bootstrap4/css/style.css" rel="stylesheet">
+    <style>
+
+
+
+
+
+
+
+
+
+
+
+        html {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            perspective: 1px;
+            transform-style: preserve-3d;
+            height: 100%;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+
+        h2 {
+            font-family: 'Work Sans',sans-serif;
+            font-size: 350%;
+            color: #FFF;
+            text-shadow: 3px 3px #666;
+        }
+
+        .slide {
+            position: relative;
+            padding: 25% 10%;
+            min-height: 100%;
+            box-sizing: border-box;
+            box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+            transform-style: inherit;
+        }
+
+            .slide:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                bottom: 0px;
+                right: 0;
+                left: 0;
+                box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.7);
+            }
+
+            .slide, .slide:before {
+                background: 50% 50%/cover;
+            }
+
+        #intro1 {
+            background-image: url('images/img (129).jpg');
+            transform: translateZ(-1px) scale(2);
+            z-index: 2;
+        }
+
+        #intro2 {
+            background-image: url('images/img (17).jpg');
+            z-index: 2;
+        }
+
+        #intro3:before {
+            background-image: url('images/img (35).jpg');
+            transform: translateZ(-1px) scale(2);
+        }
+
+        #intro4 {
+            background-image: url('images/img (15).jpg');
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="slide" id="intro1">
+        <h2>Pure CSS Parallex Effect</h2>
+    </div>
+    <div class="slide" id="intro2"></div>
+    <div class="slide" id="intro3"></div>
+    <div class="slide" id="intro4"></div>
+    <!-- JQuery -->
+    <script type="text/javascript" src="Bootstrap4/js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap carsoul -->
+    <script src="Bootstrap4/js/carsoul.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="Bootstrap4/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="Bootstrap4/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="Bootstrap4/js/mdb.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <!-- Custome js files -->
+    <script src="Bootstrap4/js/main.js"></script>
+</body>
+</html>
