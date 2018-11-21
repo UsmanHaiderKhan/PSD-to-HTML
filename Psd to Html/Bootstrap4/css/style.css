@@ -94,12 +94,13 @@ h2 {
     border-radius: 5px !important;
 }*/
 
+
+
 #our-work {
     background-image: url('../../images/img (15).jpg');
     background-size: cover;
-    position: fixed;
-    background-position: center center;
-    will-change: transform;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 
@@ -142,6 +143,12 @@ h2 {
 @media(max-width: 766px) {
     .card-box .img {
         transform: translateX(125%);
+    }
+}
+
+@media(max-width: 480px) {
+    .card-box .img {
+        transform: translateX(108%);
     }
 }
 
@@ -236,6 +243,8 @@ h2 {
     background-image: url('../../images/Screenshot (97).png');
     filter: brightness(98%);
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .icon-color {
