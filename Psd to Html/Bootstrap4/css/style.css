@@ -97,6 +97,9 @@ h2 {
 #our-work {
     background-image: url('../../images/img (15).jpg');
     background-size: cover;
+    position: fixed;
+    background-position: center center;
+    will-change: transform;
 }
 
 
