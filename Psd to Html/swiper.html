@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>swiper</title>
+    <link href="swiper-master/dist/css/swiper.min.css" rel="stylesheet" />
+    <!-- Demo styles -->
+    <style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        body {
+            background: #262626;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+            height: 380px;
+        }
+
+            .swiper-slide .imgBx {
+                width: 100%;
+                height: 300px;
+                overflow: inherit;
+            }
+
+                .swiper-slide .imgBx img {
+                    width: 100%;
+                }
+
+            .swiper-slide .details {
+                box-sizing: border-box;
+                padding: 20px;
+            }
+
+                .swiper-slide .details h3 {
+                    color: white;
+                    margin: 0px;
+                    padding: 0px;
+                    font-size: 20px;
+                    text-align: center;
+                    line-height: 20px;
+                }
+
+                    .swiper-slide .details h3 span {
+                        margin-top: 2px;
+                        font-size: 16px;
+                        color: #f44336;
+                    }
+    </style>
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="http://lorempixel.com/600/600/nature/1" />
+                </div>
+                <div class="details">
+                    <h3>Usman Haider Khan<br /> <span>WEb Developer</span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="http://lorempixel.com/600/600/nature/1" />
+                </div>
+                <div class="details">
+                    <h3>Usman Haider Khan<br /> <span>WEb Developer</span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="http://lorempixel.com/600/600/nature/1" />
+                </div>
+                <div class="details">
+                    <h3>Usman Haider Khan<br /> <span>WEb Developer</span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="http://lorempixel.com/600/600/nature/1" />
+                </div>
+                <div class="details">
+                    <h3>Usman Haider Khan <br /> <span>WEb Developer</span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="http://lorempixel.com/600/600/nature/1" />
+                </div>
+                <div class="details">
+                    <h3>Usman Haider Khan <br /><span>WEb Developer</span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="http://lorempixel.com/600/600/nature/1" />
+                </div>
+                <div class="details">
+                    <h3>Usman Haider Khan <br /><span>WEb Developer</span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="http://lorempixel.com/600/600/nature/1" />
+                </div>
+                <div class="details">
+                    <h3>Usman Haider Khan <br /><span>WEb Developer</span></h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="http://lorempixel.com/600/600/nature/1" />
+                </div>
+                <div class="details">
+                    <h3>Usman Haider Khan <br /><span>WEb Developer</span></h3>
+                </div>
+            </div>
+        </div>
+        <!--<div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/2)"></div>
+        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/3)"></div>
+        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/4)"></div>
+        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/5)"></div>
+        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/6)"></div>
+        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/7)"></div>
+        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/8)"></div>
+        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/9)"></div>
+        <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/10)"></div>-->
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <script src="swiper-master/dist/js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
+</body>
+</html>
